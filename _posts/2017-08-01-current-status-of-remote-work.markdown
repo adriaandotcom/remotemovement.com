@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Current status of remote work"
-image: /images/pic07.jpg
+image: /images/wordpress.jpg
 ---
 
 In a recent Wall Street Journal article, the topic of remote work is covered in a rather pragmatic approach. Christopher Mims covers the topic with both journalistic intrigue and presents facts from both sides of the remote work camps.

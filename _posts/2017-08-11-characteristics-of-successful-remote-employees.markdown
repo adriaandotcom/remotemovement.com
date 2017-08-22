@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "6 Characteristics of Successful Remote Employees"
-image: /images/pic07.jpg
+image: /images/work-in-bar.jpg
 ---
 
 Just like everything else, remote work comes in all shapes and sizes and both companies and their workers are reaping the rewards. In a recent Forbes article, Anna Johansson lays out eight key characteristics that the most successful remote workers embody.
