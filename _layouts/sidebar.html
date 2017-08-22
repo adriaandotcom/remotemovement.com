@@ -4,38 +4,38 @@ layout: default
 
 {% comment %}
 
-	Slate by Pixelarity
-	pixelarity.com | hello@pixelarity.com
-	License: pixelarity.com/license
+ Slate by Pixelarity
+ pixelarity.com | hello@pixelarity.com
+ License: pixelarity.com/license
 
-	Name:
+ Name:
 
-		Sidebar layout
+  Sidebar layout
 
-	Description:
+ Description:
 
-		A layout where content is displayed alongside the sidebar.
-		Allows defining the sidebar orientation on each page.
+  A layout where content is displayed alongside the sidebar.
+  Allows defining the sidebar orientation on each page.
 
-	Example:
+ Example:
 
-		---
-		layout: sidebar
-		sidebar_align: right
-		---
+  ---
+  layout: sidebar
+  sidebar_align: right
+  ---
 
 {% endcomment %}
 
 <!-- Main -->
-	<section id="main" class="wrapper sidebar {{ page.sidebar_align | default: 'right' }}">
-		<div class="inner">
+ <section id="main" class="wrapper sidebar {{ page.sidebar_align | default: 'right' }}">
+  <div class="inner">
 
-			<!-- Content -->
-				<div class="content">
-					{{ content }}
-				</div>
+   <!-- Content -->
+    <div class="content">
+     {{ content }}
+    </div>
 
-			{% include layout/sidebar.html %}
+   {% include layout/sidebar.html %}
 
-		</div>
-	</section>
+  </div>
+ </section>

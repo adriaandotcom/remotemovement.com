@@ -1,36 +1,36 @@
 {% comment %}
 
-	Slate by Pixelarity
-	pixelarity.com | hello@pixelarity.com
-	License: pixelarity.com/license
+ Slate by Pixelarity
+ pixelarity.com | hello@pixelarity.com
+ License: pixelarity.com/license
 
-	Name:
+ Name:
 
-		Site header
+  Site header
 
-	Description:
+ Description:
 
-		Site header and navigation.
-		Set "header_class" to "alt" in the page frontmatter
-		to blend the header with the page.
+  Site header and navigation.
+  Set "header_class" to "alt" in the page frontmatter
+  to blend the header with the page.
 
-	Example:
+ Example:
 
-		{% include layout/header.html %}
+  {% include layout/header.html %}
 
 {% endcomment %}
 
 <!-- Header -->
-	<header id="header" class="{{ include.class }}">
-		<h1><a href="{{ site.baseurl }}/">
-			{{ site.title }} <span>{{ site.tagline }}</span>
-		</a></h1>
-		<nav id="nav">
-			<ul>
-				<li><a href="{{ site.baseurl }}/">Home</a></li>
-				<li><a href="{{ site.baseurl }}/courses">Upcoming courses</a></li>
-				<li><a href="{{ site.baseurl }}/blog">Blog</a></li>
-				<li><a href="#" class="button">Start now</a></li>
-			</ul>
-		</nav>
-	</header>
+ <header id="header" class="{{ include.class }}">
+  <h1><a href="{{ site.baseurl }}/">
+   {{ site.title }} <span>{{ site.tagline }}</span>
+  </a></h1>
+  <nav id="nav">
+   <ul>
+    <li><a href="{{ site.baseurl }}/">Home</a></li>
+    <li><a href="{{ site.baseurl }}/courses">Upcoming courses</a></li>
+    <li><a href="{{ site.baseurl }}/blog">Blog</a></li>
+    <li><a href="#" class="button">Start now</a></li>
+   </ul>
+  </nav>
+ </header>

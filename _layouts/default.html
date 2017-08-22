@@ -1,74 +1,74 @@
 {% comment %}
 
-	Slate by Pixelarity
-	pixelarity.com | hello@pixelarity.com
-	License: pixelarity.com/license
+ Slate by Pixelarity
+ pixelarity.com | hello@pixelarity.com
+ License: pixelarity.com/license
 
-	Name:
+ Name:
 
-		Default layout
+  Default layout
 
-	Description:
+ Description:
 
-		Basic HTML foundation for all pages.
+  Basic HTML foundation for all pages.
 
-	Example:
+ Example:
 
-		---
-		layout: default
-		---
+  ---
+  layout: default
+  ---
 
 {% endcomment %}
 
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+ <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
-		<title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
-		<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
-		<!--[if lte IE 8]><script src="{{ site.baseurl }}/assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css" />
-		<!--[if lte IE 9]><link rel="stylesheet" href="{{ site.baseurl }}/assets/css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="{{ site.baseurl }}/assets/css/ie8.css" /><![endif]-->
-		<noscript><link rel="stylesheet" href="{{ site.baseurl }}/assets/css/noscript.css" /></noscript>
+  <!--[if lte IE 8]><script src="{{ site.baseurl }}/assets/js/ie/html5shiv.js"></script><![endif]-->
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css" />
+  <!--[if lte IE 9]><link rel="stylesheet" href="{{ site.baseurl }}/assets/css/ie9.css" /><![endif]-->
+  <!--[if lte IE 8]><link rel="stylesheet" href="{{ site.baseurl }}/assets/css/ie8.css" /><![endif]-->
+  <noscript><link rel="stylesheet" href="{{ site.baseurl }}/assets/css/noscript.css" /></noscript>
 
-		<link rel="apple-touch-icon" sizes="57x57" href="/icons/apple-icon-57x57.png">
-		<link rel="apple-touch-icon" sizes="60x60" href="/icons/apple-icon-60x60.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="/icons/apple-icon-72x72.png">
-		<link rel="apple-touch-icon" sizes="76x76" href="/icons/apple-icon-76x76.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="/icons/apple-icon-114x114.png">
-		<link rel="apple-touch-icon" sizes="120x120" href="/icons/apple-icon-120x120.png">
-		<link rel="apple-touch-icon" sizes="144x144" href="/icons/apple-icon-144x144.png">
-		<link rel="apple-touch-icon" sizes="152x152" href="/icons/apple-icon-152x152.png">
-		<link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-icon-180x180.png">
-		<link rel="icon" type="image/png" sizes="192x192"  href="/icons/android-icon-192x192.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="96x96" href="/icons/favicon-96x96.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
-		<link rel="manifest" href="/icons/manifest.json">
-		<meta name="msapplication-TileColor" content="#ffffff">
-		<meta name="msapplication-TileImage" content="/icons/ms-icon-144x144.png">
-		<meta name="theme-color" content="#ffffff">
-	</head>
-	<body>
+  <link rel="apple-touch-icon" sizes="57x57" href="/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+  <link rel="manifest" href="/icons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/icons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+ </head>
+ <body>
 
-		{% include layout/header.html class=page.header_class %}
+  {% include layout/header.html class=page.header_class %}
 
-		{{ content }}
+  {{ content }}
 
-		{% include layout/footer.html %}
+  {% include layout/footer.html %}
 
-		<!-- Scripts -->
-			<script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
-			<script src="{{ site.baseurl }}/assets/js/jquery.dropotron.min.js"></script>
-			<script src="{{ site.baseurl }}/assets/js/jquery.scrollex.min.js"></script>
-			<script src="{{ site.baseurl }}/assets/js/skel.min.js"></script>
-			<script src="{{ site.baseurl }}/assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="{{ site.baseurl }}/assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="{{ site.baseurl }}/assets/js/main.js"></script>
+  <!-- Scripts -->
+   <script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
+   <script src="{{ site.baseurl }}/assets/js/jquery.dropotron.min.js"></script>
+   <script src="{{ site.baseurl }}/assets/js/jquery.scrollex.min.js"></script>
+   <script src="{{ site.baseurl }}/assets/js/skel.min.js"></script>
+   <script src="{{ site.baseurl }}/assets/js/util.js"></script>
+   <!--[if lte IE 8]><script src="{{ site.baseurl }}/assets/js/ie/respond.min.js"></script><![endif]-->
+   <script src="{{ site.baseurl }}/assets/js/main.js"></script>
 
-	</body>
+ </body>
 </html>

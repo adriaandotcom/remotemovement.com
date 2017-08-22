@@ -1,41 +1,41 @@
 {% comment %}
 
-	Slate by Pixelarity
-	pixelarity.com | hello@pixelarity.com
-	License: pixelarity.com/license
+ Slate by Pixelarity
+ pixelarity.com | hello@pixelarity.com
+ License: pixelarity.com/license
 
-	Name:
+ Name:
 
-		Banner
+  Banner
 
-	Description:
+ Description:
 
-		Generates a slideshow banner.
+  Generates a slideshow banner.
 
-	Example:
+ Example:
 
-		---
-		my_slides_array:
-		- image: /images/slide01.jpg
-			title: Magna tempus. Sed feugiat.
-			url: "#"
-		- image: /images/slide02.jpg
-			title: Aliquam veroeros nullam.
-			url: "#"
-		---
+  ---
+  my_slides_array:
+  - image: /images/slide01.jpg
+   title: Magna tempus. Sed feugiat.
+   url: "#"
+  - image: /images/slide02.jpg
+   title: Aliquam veroeros nullam.
+   url: "#"
+  ---
 
-		{% include layout/banner.html slides=page.my_slides_array %}
+  {% include layout/banner.html slides=page.my_slides_array %}
 
 {% endcomment %}
 
 <!-- Banner -->
-	<section id="banner">
-		{% for slide in include.slides %}
-			<article>
-				<img src="{{ site.baseurl }}{{ slide.image }}" alt="" />
-				<div class="inner">
-					<h2><a href="{{ slide.url }}">{{ slide.title }}</a></h2>
-				</div>
-			</article>
-		{% endfor %}
-	</section>
+ <section id="banner">
+  {% for slide in include.slides %}
+   <article>
+    <img src="{{ site.baseurl }}{{ slide.image }}" alt="" />
+    <div class="inner">
+     <h2><a href="{{ slide.url }}">{{ slide.title }}</a></h2>
+    </div>
+   </article>
+  {% endfor %}
+ </section>
