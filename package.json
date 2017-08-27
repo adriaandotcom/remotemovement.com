@@ -1,0 +1,8 @@
+{
+  "name": "remote.adriaan.io",
+  "scripts": {
+    "start": "jekyll serve"
+  },
+  "repository": "https://github.com/adriaanvanrossum/remote.adriaan.io.git",
+  "author": "Adriaan van Rossum <git@adriaan.io>"
+}
