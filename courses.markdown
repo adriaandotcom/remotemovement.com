@@ -8,8 +8,14 @@ layout: sidebar
 </header>
 
 ### First upcoming course
-- Start: To be determined
-- Language: English
+
+Dates of the course
+- 4 October
+- 11 October
+- 25 October
+- 8 November
+- 22 November
+
 
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">
