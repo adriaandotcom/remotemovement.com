@@ -8,7 +8,7 @@ layout: sidebar
 </header>
 
 ### First upcoming course
-- Start: 1 September 2017
+- Start: To be determined
 - Language: English
 
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
