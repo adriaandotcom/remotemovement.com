@@ -26,4 +26,4 @@ in a different city. Over half a year has gone by and his performance evaluation
 before.
 
 ### About Adriaan
-Adriaan is Dutch and likes riding his bike and tulips.
+If there was a definition of ‘seizing the opportunity’, Adriaan would probably already be riding his motorbike there. Being the pragmatic optimist that he is, he feels that anything is possible - and why not do it right away? This action-oriented and sometimes cheeky attitude gets him into the craziest situations: from developing software for Member Get Member Company on a beach in Las Palmas to managing his own radio platform from a bar in Guatemala, only taking a quick break back home to develop a brand new app for Heineken. Although following the warm weather is definitely a good reason to keep this nomad life going, it is not the main reason for his travelling urges. For Adriaan, life is about meeting new people with different mindsets, to keep the unexpected elements in his life and his career flowing. This international and fast-changing input gives him a unique and contagious development mindset, which he happily draws on while coaching new nomads.
