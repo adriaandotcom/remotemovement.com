@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Remote working: the struggle is real"
-image: /images/work-in-bar.jpg
+image: /images/struggle.jpg
 ---
 
 It is a phrase that you hear a lot. Most of the time, it is when people are commiserating about something with irony. It is a great complaint to have, considering all of the alternatives possible in the world, but for a particular situation, it is something that just is less than ideal. Not being required to come into the office everyday work is one of those situations that most people would give up a lot to have. Even so, you need to acknowledge that there are issues, “struggles” if you will, when you work remotely that you’ll have to identify and overcome in order to have a better situation for yourself. 
