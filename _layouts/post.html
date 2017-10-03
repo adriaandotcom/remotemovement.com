@@ -36,3 +36,56 @@ layout: sidebar
 {% endif %}
 
 {{ content }}
+
+<style>
+  .newsletter-form {
+    background-image: url(/images/struggle.jpg);
+    background-size: cover;
+    padding: 30px;
+    background-position: center;
+  }
+  .newsletter-form input {
+    color: white;
+    border-width: 1px;
+    border-color: #f6f6f6;
+    background-color: #f6f6f6;
+    margin-right: 2em;
+  }
+  .newsletter-form input:focus {
+    border-color: #f6f6f6;
+    color: black;
+  }
+  .newsletter-form a {
+    background-color: #f6f6f6;
+    box-shadow: none;
+    color: black;
+  }
+  .newsletter-form div {
+    display: flex;
+  }
+  .newsletter-form h2 {
+    color: #f6f6f6;
+    margin-bottom: 0.5em;
+    padding-bottom: 0;
+  }
+  .newsletter-form h2:after {
+    display: none;
+  }
+  .newsletter-form p.error {
+    background-color: rgba(136, 27, 27, 0.2);
+    color: rgba(160, 24, 24, 0.68);
+    margin-bottom: 1em;
+    padding: 5px 10px;
+    border: 1px solid rgba(160, 24, 24, 0.68);
+    display: none;
+  }
+</style>
+
+<form class="newsletter-form" method="post" action="#">
+  <h2>Question? Send us a message</h2>
+  <p class="error">Oops, something is wrong...</p>
+  <div>
+    <input placeholder="yes, this is the email field" type="email" name="newsletter-email">
+    <a class="button" href="/quiz">{% if page.button %}{{ page.button }}{% else %}Get more remote articles!{% endif %}</a>
+  </div>
+</form>
