@@ -34,9 +34,9 @@
  <div class="posts">
   {% for post in include.posts %}
    <section class="post">
-    <span class="image"><img src="{{ site.baseurl }}{{ post.image }}" alt="" /></span>
+    <span class="image"><a href="{{ post.url }}"><img src="{{ site.baseurl }}{{ post.image }}" alt="" /></a></span>
     <div class="content">
-     <h3>{{ post.title }}</h3>
+     <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
      <p>{{ post.excerpt | remove: "<p>" | remove: "</p>" }}</p>
      {% if post.url %}
       <ul class="actions">
