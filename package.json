@@ -1,8 +1,8 @@
 {
-  "name": "remote.adriaan.io",
+  "name": "Remote Movement",
   "scripts": {
     "start": "jekyll serve"
   },
-  "repository": "https://github.com/adriaanvanrossum/remote.adriaan.io.git",
+  "repository": "https://github.com/adriaanvanrossum/remotemovement.com.git",
   "author": "Adriaan van Rossum <git@adriaan.io>"
 }

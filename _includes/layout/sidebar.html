@@ -1,26 +1,26 @@
 <div class="sidebar">
- {% if page.name != "quiz.markdown" %}
-  <section>
-   <h3><a href="/quiz">Can your job be remote?</a></h3>
-   <p>Not every job can be done remotely. We created <a href="/quiz">a quiz</a> where you can check if your job can be done remotely.</p>
-   <footer>
-    <ul class="actions">
-     <li><a class="button" href="/quiz">Do the quiz</a></li>
-    </ul>
-   </footer>
-  </section>
- {% endif %}
- {% if page.name != "why.markdown" %}
-  <hr />
-  <section>
-   <a href="/why" class="image fit"><img src="{{ site.baseurl }}/images/water-splash.jpg" alt="Water Splash" /></a>
-   <h3>Why did you start the remote movement</h3>
-   <p>Because we found quite some hurdles with starting to work remotely and got so much information on how to do this, we thought, why not share this with other people and help them work remote.</p>
-   <footer>
-    <ul class="actions">
-     <li><a href="/why" class="button">Read more about our why</a></li>
-    </ul>
-   </footer>
-  </section>
- {% endif %}
+  {% if page.name != "quiz.html" %}
+    <section>
+     <h3><a href="/quiz">Can your job be remote?</a></h3>
+     <p>Not every job can be done remotely. We created <a href="/quiz">a quiz</a> where you can check if your job can be done remotely.</p>
+     <footer>
+      <ul class="actions">
+       <li><a class="button" href="/quiz">Do the quiz</a></li>
+      </ul>
+     </footer>
+    </section>
+    <hr />
+  {% endif %}
+  {% if page.name != "why.markdown" %}
+    <section>
+     <a href="/why" class="image fit"><img src="{{ site.baseurl }}/images/water-splash.jpg" alt="Water Splash" /></a>
+     <h3>Why did you start the remote movement</h3>
+     <p>Because we found quite some hurdles with starting to work remotely and got so much information on how to do this, we thought, why not share this with other people and help them work remote.</p>
+     <footer>
+      <ul class="actions">
+       <li><a href="/why" class="button">Read more about our why</a></li>
+      </ul>
+     </footer>
+    </section>
+  {% endif %}
 </div>
