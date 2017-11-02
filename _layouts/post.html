@@ -2,28 +2,6 @@
 layout: sidebar
 ---
 
-{% comment %}
-
- Slate by Pixelarity
- pixelarity.com | hello@pixelarity.com
- License: pixelarity.com/license
-
- Name:
-
-  Blog Post layout
-
- Description:
-
-  A layout for individual Blog Posts.
-
- Example:
-
-  ---
-  layout: post
-  ---
-
-{% endcomment %}
-
 <header>
  <h1>{{ page.title }}</h1>
  <p>{{ page.date | date: "%B %-d, %Y" }}</p>
@@ -43,13 +21,42 @@ layout: sidebar
     background-size: cover;
     padding: 30px;
     background-position: center;
+    position: relative;
+  }
+  .newsletter-form::before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+  }
+  .newsletter-form .thank-you {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    z-index: 10;
+    text-align: center;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    transition: opacity 500ms ease-in;
+    display: none;
   }
   .newsletter-form input {
-    color: white;
     border-width: 1px;
     border-color: #f6f6f6;
     background-color: #f6f6f6;
-    margin-right: 2em;
+  }
+  .newsletter-form input + input {
+    margin-left: 2em;
   }
   .newsletter-form input:focus {
     border-color: #f6f6f6;
@@ -62,6 +69,7 @@ layout: sidebar
   }
   .newsletter-form div {
     display: flex;
+    position: relative;
   }
   .newsletter-form h2 {
     color: #f6f6f6;
@@ -72,20 +80,62 @@ layout: sidebar
     display: none;
   }
   .newsletter-form p.error {
-    background-color: rgba(136, 27, 27, 0.2);
-    color: rgba(160, 24, 24, 0.68);
+    position: relative;
+    background-color: rgba(136, 27, 27, 0.9);
+    color: #f6f6f6;
     margin-bottom: 1em;
     padding: 5px 10px;
-    border: 1px solid rgba(160, 24, 24, 0.68);
     display: none;
+  }
+  .newsletter-form input.button {
+    box-shadow: none;
   }
 </style>
 
-<form class="newsletter-form" method="post" action="#">
+<form class="newsletter-form" method="post">
+  <div class="thank-you">Thank you!</div>
   <h2>Want exclusive access to articles like this?</h2>
   <p class="error">Oops, something is wrong...</p>
   <div>
-    <input placeholder="yes, this is the email field" type="email" name="newsletter-email">
-    <a class="button" href="/quiz">{% if page.button %}{{ page.button }}{% else %}Yes, of course!{% endif %}</a>
+    <input placeholder="yes, this is the email field" type="text" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" title="Invalid email address" required>
+    <input type="submit" class="button" value="{% if page.button %}{{ page.button }}{% else %}I want this life!{% endif %}">
   </div>
 </form>
+
+<script>
+  var form = document.querySelector('.newsletter-form');
+  function showError(message) {
+    var box = form.querySelector('.error');
+    box.innerHTML = 'Please fill in your email address';
+    box.style.display = 'block';
+  }
+  function done() {
+    var thanks = form.querySelector('.thank-you');
+    thanks.style.display = 'flex';
+    window.setTimeout(function() {
+      thanks.style.opacity = 1;
+    }, 100);
+    window.setTimeout(function() {
+      thanks.style.display = 'none';
+      thanks.style.opacity = 0;
+    }, 2000);
+  }
+  function saveEmail(email) {
+    var subject = encodeURIComponent('New signup for remotemovement.com');
+    var body = encodeURIComponent(email);
+
+    // Send newsletter email to myself
+    var url = 'https://screenmessage.com/blog/mail.php?subject=' + subject + '&message=' + body + '&from=' + encodeURIComponent(email);
+    var request = new XMLHttpRequest();
+    request.open('GET', url, true);
+    request.send();
+    done();
+  }
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();
+    var email = form.querySelector('input[type="text"]').value;
+    if (!email || email.trim() === '') return showError('Please fill in your email address');
+    if (email.indexOf('@') === -1 || email.indexOf('.') === -1) return showError('Please fill in a valid email address');
+    saveEmail(email);
+  })
+</script>
