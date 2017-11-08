@@ -106,8 +106,6 @@ p.error {
    function saveEmail(email, name, message) {
      var subject = encodeURIComponent('Message for remotemovement.com');
      var body = encodeURIComponent('Email: ' + email + '\nName: ' + name + '\n\n' + message);
-
-     // Send newsletter email to myself
      var url = 'https://screenmessage.com/blog/mail.php?domain=remotemovement.com&subject=' + subject + '&message=' + body + '&from=' + encodeURIComponent(email);
      var request = new XMLHttpRequest();
      request.open('GET', url, true);

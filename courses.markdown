@@ -20,3 +20,17 @@ Coming in 2018...
 <img alt="" border="0" src="https://www.paypalobjects.com/nl_NL/i/scr/pixel.gif" width="1" height="1">
 </form>
 -->
+
+### What you will get
+
+| 5 sessions of Remote Yourself – course on how to make your job location independent     | $479                |
+| Blueprint to Remote Working Success (4 Rs)                                              | $267                |
+| Extra session of small group coaching                                                   | $129                |
+| Lifetime membership to networking and collaboration mastermind community                | $179                |
+| Access to support during the course                                                     | $247                |
+|                                                                                         | **> $1300 in value** |
+
+Plus - Early access to future articles and material from remotemovement.com<br>
+First five applicants get a BONUS A 30-minute private coaching session (Valued at $174)
+
+<a class="button">Signup now!</a>
