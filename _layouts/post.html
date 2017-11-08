@@ -102,14 +102,18 @@ layout: sidebar
   .newsletter-form input.button {
     box-shadow: none;
   }
+  .newsletter-form input.special {
+    display: none;
+  }
 </style>
 
 <form class="newsletter-form" method="post">
   <div class="thank-you">Thank you!</div>
   <h2>Want exclusive access to articles like this?</h2>
   <p class="error">Oops, something is wrong...</p>
+  <input placeholder="yes, this is a special field" type="text" class="special">
   <div>
-    <input placeholder="yes, this is the email field" type="text" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" title="Invalid email address" required>
+    <input placeholder="yes, this is the email field" class="email" type="text" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" title="Invalid email address" required>
     <input type="submit" class="button" value="{% if page.button %}{{ page.button }}{% else %}I want this life!{% endif %}">
   </div>
 </form>
@@ -134,18 +138,21 @@ layout: sidebar
   }
   function saveEmail(email) {
     var subject = encodeURIComponent('New signup for remotemovement.com');
-    var body = encodeURIComponent(email);
+    var body = email ? encodeURIComponent(email) : null;
 
     // Send newsletter email to myself
-    var url = 'https://screenmessage.com/blog/mail.php?subject=' + subject + '&message=' + body + '&from=' + encodeURIComponent(email);
+    var url = 'https://screenmessage.com/blog/mail.php?domain=remotemovement.com&subject=' + subject + '&message=' + body + '&from=' + encodeURIComponent(email);
     var request = new XMLHttpRequest();
+    url = email ? url : 'https://screenmessage.com/blog/mail.php?domain=remotemovement.com&special=true';
     request.open('GET', url, true);
     request.send();
     done();
   }
   form.addEventListener('submit', function(event) {
     event.preventDefault();
-    var email = form.querySelector('input[type="text"]').value;
+    var email = form.querySelector('input.email').value;
+    var special = form.querySelector('input.special').value;
+    if (special) return saveEmail();
     if (!email || email.trim() === '') return showError('Please fill in your email address');
     if (email.indexOf('@') === -1 || email.indexOf('.') === -1) return showError('Please fill in a valid email address');
     saveEmail(email);
