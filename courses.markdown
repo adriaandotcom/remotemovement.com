@@ -33,4 +33,4 @@ Coming in 2018...
 Plus - Early access to future articles and material from remotemovement.com<br>
 First five applicants get a BONUS A 30-minute private coaching session (Valued at $174)
 
-<a class="button">Signup now!</a>
+<p><a class="button">Signup now for $487!</a> and after the intace call you can decide if you like it. Not sure? You get your money back without any questions!</p>
