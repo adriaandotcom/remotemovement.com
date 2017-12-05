@@ -119,13 +119,13 @@ layout: sidebar
 </form>
 
 <script>
-  var form = document.querySelector('.newsletter-form');
-  function showError(message) {
-    var box = form.querySelector('.error');
+  var formNewsletter = document.querySelector('.newsletter-form');
+  function showErrorNewsletter(message) {
+    var box = formNewsletter.querySelector('.error');
     box.innerHTML = 'Please fill in your email address';
     box.style.display = 'block';
   }
-  function done() {
+  function doneNewsletter() {
     var thanks = form.querySelector('.thank-you');
     thanks.style.display = 'flex';
     window.setTimeout(function() {
@@ -136,7 +136,7 @@ layout: sidebar
       thanks.style.opacity = 0;
     }, 2000);
   }
-  function saveEmail(email) {
+  function saveEmailNewsletter(email) {
     var subject = encodeURIComponent('New signup for remotemovement.com');
     var body = email ? encodeURIComponent(email) : null;
 
@@ -146,15 +146,15 @@ layout: sidebar
     url = email ? url : 'https://screenmessage.com/blog/mail.php?domain=remotemovement.com&special=true';
     request.open('GET', url, true);
     request.send();
-    done();
+    doneNewsletter();
   }
   form.addEventListener('submit', function(event) {
     event.preventDefault();
-    var email = form.querySelector('input.email').value;
-    var special = form.querySelector('input.special').value;
-    if (special) return saveEmail();
-    if (!email || email.trim() === '') return showError('Please fill in your email address');
-    if (email.indexOf('@') === -1 || email.indexOf('.') === -1) return showError('Please fill in a valid email address');
-    saveEmail(email);
+    var email = formNewsletter.querySelector('input.email').value;
+    var special = formNewsletter.querySelector('input.special').value;
+    if (special) return saveEmailNewsletter();
+    if (!email || email.trim() === '') return showErrorNewsletter('Please fill in your email address');
+    if (email.indexOf('@') === -1 || email.indexOf('.') === -1) return showErrorNewsletter('Please fill in a valid email address');
+    saveEmailNewsletter(email);
   })
 </script>
