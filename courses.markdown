@@ -31,7 +31,9 @@ Coming in 2018...
 | Access to support during the course                                                     | $247                |
 |                                                                                         | **> $1300 in value** |
 
+We offer you this package for **$487**.
+
 Plus - Early access to future articles and material from remotemovement.com<br>
 First five applicants get a BONUS A 30-minute private coaching session (Valued at $174)
 
-<p><a class="button" href="https://calendly.com/adriaanvanrossum/videocall" target="_blank">Signup now for $487!</a> not satisfied after the intake call? Money-back guarantee!</p>
+<p><a class="button" href="https://calendly.com/adriaanvanrossum/videocall" target="_blank">Schedule this first call</a> not satisfied after the intake call? Money-back guarantee!</p>
