@@ -23,6 +23,7 @@ Coming in 2018...
 
 ### What you will get
 
+| Intake call | Free |
 | 5 sessions of Remote Yourself – course on how to make your job location independent     | $479                |
 | Blueprint to Remote Working Success (4 Rs)                                              | $267                |
 | Extra session of small group coaching                                                   | $129                |
@@ -33,4 +34,4 @@ Coming in 2018...
 Plus - Early access to future articles and material from remotemovement.com<br>
 First five applicants get a BONUS A 30-minute private coaching session (Valued at $174)
 
-<p><a class="button">Signup now for $487!</a> and after the intace call you can decide if you like it. Not sure? You get your money back without any questions!</p>
+<p><a class="button" href="https://calendly.com/adriaanvanrossum/videocall" target="_blank">Signup now for $487!</a> not satisfied after the intake call? Money-back guarantee!</p>
