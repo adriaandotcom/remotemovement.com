@@ -148,7 +148,7 @@ layout: sidebar
     request.send();
     doneNewsletter();
   }
-  form.addEventListener('submit', function(event) {
+  formNewsletter.addEventListener('submit', function(event) {
     event.preventDefault();
     var email = formNewsletter.querySelector('input.email').value;
     var special = formNewsletter.querySelector('input.special').value;
